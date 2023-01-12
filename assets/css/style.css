@@ -1,5 +1,284 @@
-ohmyfood
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-</style>
-font-family: 'Raleway', sans-serif;
+h1 {
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+     width: 70%;
+      padding-top: 10px;
+}
+#logo img {
+
+    width: 40%;
+    
+}
+#logo {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   padding: 10px;
+   
+  
+
+}
+header {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#search {
+
+    background-color: #EAEAEA;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 4px 5px 0px #aba9a9;
+    padding: 15px 0px 15px 0px;
+   
+
+}
+
+#search span {
+    
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+padding-left: 17px;
+font-style: medium;
+
+}
+
+.star {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F6F6F6;
+padding-bottom: 50px;
+}
+
+.star p {
+
+    width: 82%;
+font-family: "Roboto", sans-serif;
+font-size: 18px;
+font-weight: 300;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: center;
+margin-top: 0px;
+
+
+}
+.violet {
+
+    color: white;
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    border: #F2F2F2;
+    border-radius: 25px 25px 25px 25px;
+    padding: 10px 14px 10px 14px;
+font-family: "Roboto", sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+font-style: medium;
+cursor: pointer;
+
+}
+h2 {
+   
+font-family: Roboto;
+font-size: 24px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+padding-left: 10px;
+}
+
+.grey {
+
+font-family: "Roboto";
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+width: 95%;
+border-radius: 15px 15px 15px 15px;
+margin-top: 20px;
+display: flex;
+border:none;
+box-shadow: 0px 2px 4px 0px #00000026;
+background: #F6F6F6;
+align-items: center;
+cursor: pointer;
+}
+
+#functioning {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 15px 15px;
+}
+
+.grey i {
+    color: grey;
+    padding-right: 30px;
+    padding-left: 20px;
+}
+
+.grey p {
+
+    background: #9356DC;
+    color: white;
+    border-radius: 50px 50px 50px 50px;
+    position: relative;
+    right: 14px;
+    padding: 1px 4px 0px 4px;
+    font-family: Roboto;
+font-size: 14px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.grey:hover {
+    background-color: #F5EDFF;
+}
+.card {
+    display: flex;
+	flex-direction: column;
+	background: white;
+	border-radius: 20px;
+	height: 200px;
+    margin: 7%;
+	box-shadow: 5px 5px 5px 1px #aba9a9;
+    text-decoration: none;
+    color: black;
+    }
+.card img
+{
+    height: 130px;
+	border-radius: 20px 20px 0px 0px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.card h3 {
+margin:0px;
+padding-left: 10px;
+padding-top: 5px;
+font-family: Roboto;
+font-size: 18px;
+font-weight: 700;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.card span {
+    padding-left: 10px;
+    padding-top: 5px;
+    font-family: Roboto;
+font-size: 17px;
+font-weight: 300;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+#restaurants {
+    background-color: #f2f2f2;
+    height: 956px;
+    padding-top: 10px;
+}
+.textlocation{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.heart {
+display: flex;
+padding-top: 20px;
+padding-right: 20px;
+height: 30px;
+
+
+}
+.heart:active {
+color: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+}
+.textcard {
+    display: flex;
+    justify-content: space-between;
+}
+.new {
+   color:  #008766;
+   background: #99E2D0;
+  margin: 0px;
+  padding: 0px;
+  width: 62px;
+  height: 30px;
+}
+footer {
+    background: black;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    height: 168px;
+}
+
+footer h3 {
+    font-family: Shrikhand;
+font-size: 18px;
+font-style: italic;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.row  span {
+    font-family: Roboto,sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+padding: 5px;
+font-style: medium;
+
+}
+
+footer span{
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-style: light;   
+    padding-top: 5px;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
