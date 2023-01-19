@@ -5,8 +5,7 @@
   inset: 0;
   z-index: 1;
   opacity: 1;
-  -webkit-animation: disappear 3s forwards;
-          animation: disappear 3s forwards;
+  animation: disappear 3s forwards;
 }
 
 *, ::after, ::before {
@@ -215,8 +214,7 @@ h2 {
   height: 130px;
   border-radius: 20px 20px 0px 0px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .image {
@@ -358,4 +356,6 @@ footer a {
 
 .ustensils {
   padding-right: 5px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
