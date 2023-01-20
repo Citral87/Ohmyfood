@@ -1,0 +1,41 @@
+footer {
+	background: black;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	padding-left: 25px;
+	h3 {
+		font-family: Shrikhand, cursive;
+		font-size: 18px;
+		font-style: italic;
+		font-weight: 400;
+		line-height: 26px;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+	span {
+		font-size: 16px;
+		font-weight: 400;
+		font-style: light;
+		padding-top: 5px;
+	}
+	a {
+		text-decoration: none;
+		color: white;
+	}
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	span {
+		font-size: 16px;
+		font-weight: 500;
+		padding: 3px;
+		font-style: medium;
+	}
+}
+.ustensils {
+	padding-right: 5px;
+}
