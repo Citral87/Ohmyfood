@@ -1,3 +1,5 @@
+@use "../Utils/variables" as *;
+
 #restaurants {
 	background-color: #f2f2f2;
 	padding-top: 10px;
@@ -11,9 +13,7 @@
 }
 .heart {
 	font-size: 30px;
-	position: absolute;
-	right: 40px;
-	padding-top: 5px;
+	
 }
 .full {
 	opacity: 0;
@@ -21,7 +21,7 @@
 	transition-duration: 0.5s;
 	&:hover {
 		opacity: 1;
-		background-image: linear-gradient(#9356DC -5.2%, #FF79DA 110.74%);
+		background-image: linear-gradient($purple -5.2%, $pink 110.74%);
 		background-clip: text;
 		-webkit-background-clip: text;
 		color: transparent;
@@ -33,7 +33,7 @@
 }
 .new {
 	color: #008766;
-	background: #99E2D0;
+	background: $greenlight;
 	margin: 0px;
 	padding: 2px;
 	width: 62px;
@@ -45,4 +45,23 @@
 	font-weight: 500;
 	text-align: center;
 	font-style: normal;
+}
+
+#functioning {
+	display: flex;
+	flex-direction: column;
+	margin: 25px;
+}
+
+#search {
+	display: flex;
+	justify-content: center;
+	background-color: #EAEAEA;	
+	padding: 10px;
+	width: 100%;
+	box-shadow: inset 0px 4px 5px 0px #aba9a9;
+
+	span {
+		padding-left: 20px;
+}
 }

@@ -1,3 +1,5 @@
+@use "../Utils/variables" as *;
+
 .start {
 	display: flex;
 	flex-direction: column;
@@ -15,7 +17,7 @@
 .card {
 	display: flex;
 	flex-direction: column;
-	background: white;
+	background: $white;
 	border-radius: 20px;
 	height: 200px;
 	margin: 7%;

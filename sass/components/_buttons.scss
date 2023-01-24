@@ -1,6 +1,8 @@
+@use "../Utils/variables" as *;
+
 .violet {
-	color: white;
-	background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+	color: $white;
+	background: linear-gradient(200.64deg, $purple 0%, $pink 100%);
 	border: #F2F2F2;
 	border-radius: 25px 25px 25px 25px;
 	padding: 10px 14px 10px 14px;
@@ -33,12 +35,12 @@
 		padding-right: 30px;
 		padding-left: 20px;
 		&:hover {
-			color: #9356DC;
+			color: $purple;
 		}
 	}
 	p {
-		background: #9356DC;
-		color: white;
+		background: $purple;
+		color: $white;
 		border-radius: 50px 50px 50px 50px;
 		position: relative;
 		right: 17px;
