@@ -48,6 +48,12 @@
 		letter-spacing: 0em;
 		text-align: left;
 	}
+	@media screen and (min-width: 1024px) {
+		width: 30%;
+		margin: 1%;
+		height: 220px;
+	
+	}
 }
 .image {
 	position: relative;
