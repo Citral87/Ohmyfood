@@ -56,3 +56,22 @@
 		background-color: #F5EDFF;
 	}
 }
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background: white;
+    border-radius: 25px;
+    margin-top: 10px;
+ span {
+    font-size: 16px;
+    font-weight: 500;
+}
+ p {
+    font-size: 13px;
+    font-weight: 300;
+    margin: 0px;
+}
+}
