@@ -1,6 +1,4 @@
-$breakpoint:(
-    "phone": 768px
-);
+
 @mixin phone {
     @media  (max-width:map-get($breakpoint, "phone")){
         @content;

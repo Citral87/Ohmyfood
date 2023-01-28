@@ -1,7 +1,9 @@
 .picture img {
 	
 		width: 100%; 
-		height: 250px; }
+		height: 250px;
+        object-fit: cover;
+           }
 #position {
 	position: relative; 
 	bottom: 60px; }
@@ -10,7 +12,13 @@
 	border-radius: 4% 4% 0% 0% ;
 	padding-left: 10px; 
 	padding-right: 10px; 
-
+    overflow: hidden;
+	@media screen and (min-width: 1024px) {
+	display:flex;
+	flex-direction: column;
+	margin: auto;
+	width: 70%;
+}
 	h1 {
 		font-family: Shrikhand; 
 		font-size: 21px; 
@@ -25,21 +33,28 @@
      }
 
 	h2 {
-		font-family: Roboto; 
+	
 		font-size: 16px; 
 		font-weight: 300; 
 		border-bottom: 3px solid #99E2D0; 
 		width: 34px ;
         padding: 0px;
+        margin-top: 30px;
+       
     }
         .row {
             justify-content: space-between;
         }
+        .heart {
+            padding-top: 0px;
+        }
+
     }
 
 .text {
 	display: flex; 
 	flex-direction: column ;
+    overflow: hidden;
 }
 #order {
 	display: flex; 
