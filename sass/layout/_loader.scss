@@ -1,0 +1,24 @@
+@use '../utils/keyframes' as *;
+
+#loader {
+  font-family: 'Shrikhand', cursive;
+  font-size: 65px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: loading 3s forwards;
+  background-color: white ;
+  opacity: 0.9;
+  display: grid;
+    place-items: center;
+    margin: auto;
+    inset : 0 ;
+    position: fixed;
+    i{
+      font-size: 30px;
+      display: grid;
+      place-items: top;
+      position: fixed;
+      margin: auto;
+      inset : 0 ;
+    }
+  }

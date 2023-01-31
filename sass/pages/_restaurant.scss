@@ -1,3 +1,5 @@
+@use "../components/breakpoint" as *;
+
 .picture img {
 	
 		width: 100%; 
@@ -9,7 +11,7 @@
 	bottom: 60px; }
 .menu {
 	background-color: #F6F6F6; 
-	border-radius: 4% 4% 0% 0% ;
+	border-radius: 40px 40px 0% 0% ;
 	padding-left: 10px; 
 	padding-right: 10px; 
     overflow: hidden;
@@ -21,16 +23,12 @@
 }
 	h1 {
 		font-family: Shrikhand; 
-		font-size: 21px; 
+		font-size: 23px; 
 		font-style: italic; 
 		font-weight: 400; 
-		padding: 10px 0px ;
+		padding: 14px 0px 0px 0px; 
      }
-	i {
-		display: flex;
-        flex-direction: row;
-        justify-content: end;
-     }
+	
 
 	h2 {
 	
@@ -39,13 +37,18 @@
 		border-bottom: 3px solid #99E2D0; 
 		width: 34px ;
         padding: 0px;
-        margin-top: 30px;
+        margin-top: 25px;
        
     }
         .row {
             justify-content: space-between;
         }
         .heart {
+			
+				display: flex;
+				flex-direction: row;
+				justify-content: end;
+			 
             padding-top: 0px;
         }
 

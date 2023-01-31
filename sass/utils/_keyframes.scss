@@ -46,3 +46,11 @@
         transform: scale(1);
     }
 }
+@keyframes loading {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0;
+    }
+  }
