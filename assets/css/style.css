@@ -49,7 +49,6 @@ h2 {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
   background: #F6F6F6;
   align-items: center;
-  cursor: pointer;
   padding: 10px;
 }
 @media screen and (min-width: 1024px) {
@@ -90,10 +89,6 @@ h2 {
   border-radius: 15px;
   margin-top: 10px;
   height: 60px;
-  animation: appear 200ms;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
   cursor: pointer;
   width: 100%;
@@ -106,6 +101,7 @@ h2 {
   align-items: center;
   height: 60px;
   width: 51px;
+  border-radius: 0px 15px 15px 0px;
 }
 .btn span {
   font-size: 16px;
@@ -117,6 +113,9 @@ h2 {
   font-weight: 300;
   margin: 0px;
   padding-top: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .btn i {
   display: none;
@@ -283,7 +282,7 @@ h2 {
   width: 75px;
   height: 20px;
   position: absolute;
-  left: 72%;
+  left: 65%;
   bottom: 70%;
   font-size: 14px;
   font-weight: 400;
@@ -352,20 +351,35 @@ footer span {
   font-size: 16px;
   font-weight: 400;
   font-style: light;
-  padding-top: 5px;
+}
+@media screen and (min-width: 1024px) {
+  footer span {
+    padding-right: 30px;
+  }
 }
 footer a {
   text-decoration: none;
   color: white;
-  padding-top: 5px;
 }
 @media screen and (min-width: 1024px) {
   footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
     height: 85px;
+  }
+}
+
+#footmore {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media screen and (min-width: 1024px) {
+  #footmore {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -374,10 +388,14 @@ footer a {
   flex-direction: row;
   align-items: baseline;
 }
+@media screen and (min-width: 1024px) {
+  .row {
+    padding-right: 30px;
+  }
+}
 .row span {
   font-size: 16px;
   font-weight: 500;
-  padding: 3px;
   font-style: medium;
 }
 
@@ -428,19 +446,23 @@ footer a {
   }
 }
 @keyframes appear {
-  0% {
-    transform: scale(0);
+  from {
+    opacity: 0;
+    margin-top: -50px;
   }
-  100% {
-    transform: scale(1);
+  to {
+    opacity: 1;
+    margin-top: 0;
   }
 }
 @-webkit-keyframes appear {
-  0% {
-    transform: scale(0);
+  from {
+    opacity: 0;
+    margin-top: -50px;
   }
-  100% {
-    transform: scale(1);
+  to {
+    opacity: 1;
+    margin-top: 0;
   }
 }
 @keyframes loading {
@@ -464,14 +486,6 @@ footer a {
   margin: auto;
   inset: 0;
   position: fixed;
-}
-#loader i {
-  font-size: 30px;
-  display: grid;
-  place-items: top;
-  position: fixed;
-  margin: auto;
-  inset: 0;
 }
 
 .picture img {
@@ -528,13 +542,35 @@ footer a {
 .text {
   display: flex;
   flex-direction: column;
+  text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
+}
+.text span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 #order {
   display: flex;
   justify-content: center;
   padding: 20px;
+}
+
+.animone {
+  animation: appear 1s ease-in-out;
+  animation-direction: bottom;
+}
+
+.animtwo {
+  animation: appear 2s ease-in-out;
+  animation-direction: bottom;
+}
+
+.animthree {
+  animation: appear 3s ease-in-out;
+  animation-direction: bottom;
 }
 
 /*# sourceMappingURL=style.css.map */

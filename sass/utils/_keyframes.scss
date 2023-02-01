@@ -31,20 +31,26 @@
     }
 }
 @keyframes appear {
-    0% {
-        transform: scale(0);
+    from {
+        opacity: 0;
+        margin-top: -50px;
+      }
+      to {
+        opacity: 1;
+        margin-top: 0;
+      }
     }
-    100% {
-        transform: scale(1);
-    }
-}
+
 @-webkit-keyframes appear {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
+    from {
+        opacity: 0;
+        margin-top: -50px;
+      }
+      to {
+        opacity: 1;
+        margin-top: 0;
+      }
+    
 }
 @keyframes loading {
     from {

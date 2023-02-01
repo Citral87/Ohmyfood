@@ -20,31 +20,50 @@ footer {
 		font-size: 16px;
 		font-weight: 400;
 		font-style: light;
-		padding-top: 5px;
+		@media screen and (min-width: 1024px) {
+			padding-right: 30px;
+		}
+		
 	}
 	a {
 		text-decoration: none;
 		color: $white;
-		padding-top: 5px;
+		
 	}
+
 	@media screen and (min-width: 1024px) {
 		display: flex;
-		flex-direction: row;
+		flex-direction: row-reverse;
 		align-items: center;
 		justify-content: space-evenly;
 		height: 85px;
+		
+	}
+}
+	#footmore {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		@media screen and (min-width: 1024px) {
+			display: flex;
+			flex-direction: row;
+
+		}
+		
 	}
 	
-}
+
 .row {
 	display: flex;
 	flex-direction: row;
 	align-items:baseline;
+	@media screen and (min-width: 1024px) {
+		padding-right: 30px;
+	}
 	
 	span {
 		font-size: 16px;
 		font-weight: 500;
-		padding: 3px;
 		font-style: medium;
 	}
 }

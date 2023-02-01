@@ -57,10 +57,34 @@
 .text {
 	display: flex; 
 	flex-direction: column ;
-    overflow: hidden;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	span{
+		text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	}
 }
 #order {
 	display: flex; 
 	justify-content: center ;
 	padding: 20px ;
+}
+
+
+.animone {
+	
+		animation: appear 1s ease-in-out;
+	  animation-direction: bottom;
+}
+.animtwo {
+	
+	animation: appear 2s ease-in-out;
+  animation-direction: bottom;
+}
+.animthree {
+	
+	animation: appear 3s ease-in-out;
+  animation-direction: bottom;
 }
