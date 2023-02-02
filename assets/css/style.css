@@ -22,7 +22,7 @@ h2 {
 
 .violet {
   color: white;
-  background: linear-gradient(#FF79DA 0%, #9356DC 100%);
+  background: linear-gradient(to bottom right, #FF79DA -5%, #9356DC 110%);
   border: #F2F2F2;
   border-radius: 25px 25px 25px 25px;
   padding: 10px 14px 10px 14px;
@@ -102,6 +102,7 @@ h2 {
   height: 60px;
   width: 51px;
   border-radius: 0px 15px 15px 0px;
+  animation: fill 0.5s ease-out forwards;
 }
 .btn span {
   font-size: 16px;
@@ -139,11 +140,17 @@ h2 {
   font-weight: 300;
   margin-top: 0px;
   text-align: center;
+  padding-bottom: 20px;
 }
 .start h1 {
   padding-top: 20px;
   padding-left: 20px;
   text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .start h1 {
+    font-size: 40px;
+  }
 }
 
 .card {
@@ -185,7 +192,6 @@ h2 {
   .card {
     width: 30%;
     margin: 1%;
-    height: 220px;
     display: flex;
   }
 }
@@ -206,8 +212,9 @@ h2 {
 @media screen and (min-width: 1024px) {
   #restaurants {
     width: 100%;
+    padding-left: 60px;
     overflow: auto;
-    height: 440px;
+    height: 364px;
   }
 }
 
@@ -282,7 +289,7 @@ h2 {
   width: 75px;
   height: 20px;
   position: absolute;
-  left: 65%;
+  left: 66%;
   bottom: 70%;
   font-size: 14px;
   font-weight: 400;
@@ -299,6 +306,11 @@ h2 {
   margin-left: 15px;
   margin-top: 0px;
   padding-bottom: 40px;
+}
+@media screen and (min-width: 1024px) {
+  #functioning {
+    margin-left: 60px;
+  }
 }
 
 #search {
@@ -343,18 +355,17 @@ footer h3 {
   font-size: 18px;
   font-style: italic;
   font-weight: 400;
-  line-height: 26px;
-  letter-spacing: 0em;
-  text-align: left;
 }
 footer span {
   font-size: 16px;
   font-weight: 400;
   font-style: light;
+  padding-top: 9px;
 }
 @media screen and (min-width: 1024px) {
   footer span {
     padding-right: 30px;
+    padding-top: 0px;
   }
 }
 footer a {
@@ -380,6 +391,7 @@ footer a {
   #footmore {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
   }
 }
 
@@ -387,6 +399,7 @@ footer a {
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  padding-top: 10px;
 }
 @media screen and (min-width: 1024px) {
   .row {
@@ -473,6 +486,14 @@ footer a {
     width: 0;
   }
 }
+@keyframes fill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 51px;
+  }
+}
 #loader {
   font-family: "Shrikhand", cursive;
   font-size: 65px;
@@ -530,7 +551,7 @@ footer a {
   margin-top: 25px;
 }
 .menu .row {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .menu .heart {
   display: flex;
@@ -560,17 +581,20 @@ footer a {
 
 .animone {
   animation: appear 1s ease-in-out;
-  animation-direction: bottom;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .animtwo {
   animation: appear 2s ease-in-out;
-  animation-direction: bottom;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .animthree {
   animation: appear 3s ease-in-out;
-  animation-direction: bottom;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

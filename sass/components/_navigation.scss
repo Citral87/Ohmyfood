@@ -11,10 +11,10 @@
 	}
 	@media screen and (min-width: 1024px) {
 		width: 100%;
-		
+		padding-left: 60px;
 	overflow: auto;
 		 
-			height: 440px;
+			height: 364px;
 		
 		
 	}
@@ -84,7 +84,7 @@ font-weight: 300
 	width: 75px;
 	height: 20px;
 	position: absolute;
-	left: 65%;
+	left: 66%;
 	bottom: 70%;
 	font-size: 14px;
 	font-weight: 400;
@@ -103,7 +103,12 @@ font-weight: 300
     margin-left: 15px;
 	margin-top: 0px;
 	padding-bottom: 40px;
-}
+	@media screen and (min-width: 1024px) {
+		margin-left: 60px;
+	}
+		
+	}
+
 
 #search {
 	display: flex;

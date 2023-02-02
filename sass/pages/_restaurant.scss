@@ -41,8 +41,10 @@
        
     }
         .row {
-            justify-content: space-between;
+            justify-content: space-around;
         }
+		
+
         .heart {
 			
 				display: flex;
@@ -76,15 +78,18 @@
 .animone {
 	
 		animation: appear 1s ease-in-out;
-	  animation-direction: bottom;
+	  margin-left: 20px;
+	  margin-right: 20px;
 }
 .animtwo {
 	
 	animation: appear 2s ease-in-out;
-  animation-direction: bottom;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 .animthree {
 	
 	animation: appear 3s ease-in-out;
-  animation-direction: bottom;
+	margin-left: 20px;
+	margin-right: 20px;
 }
