@@ -11,8 +11,8 @@
 	}
 	@media screen and (min-width: 1024px) {
 		width: 100%;
-		padding-left: 60px;
-	overflow: auto;
+		
+	
 		 
 			height: 364px;
 		
@@ -34,6 +34,8 @@
 	@media screen and (min-width: 1024px) {
 	display: flex;
     flex-direction: row;
+	overflow-x:scroll;
+	
 	
 	
 

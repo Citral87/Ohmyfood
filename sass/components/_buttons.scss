@@ -10,7 +10,6 @@
 	font-size: 16px;
 	font-weight: 400;
 	text-align: center;
-	font-style: medium;
 	cursor: pointer;
 	&:hover {
 		opacity: 0.85;
@@ -39,7 +38,7 @@
 		padding-right: 20px;
 
 	}
-	p {
+	.number {
 		background: $purple;
 		color: $white;
 		border-radius: 50px 50px 50px 50px;
@@ -52,11 +51,11 @@
 }
 	
 .greythird {
-	i {
+	
+	background-color: #F5EDFF ;
+i {
 		color: $purple;
 	}
-	background-color: #F5EDFF ;
-
 
 }
 .btn {
@@ -118,4 +117,5 @@ i {
 .pricecheck {
 	display: flex;
 	justify-content: end;
+	align-items: center;
 }

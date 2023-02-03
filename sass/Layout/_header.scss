@@ -8,13 +8,14 @@ header {
 .headresto {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 
 i{
-	text-decoration:none;
+	color: black;
 	font-size: 24px;
 	padding-left: 5px;
 }
+
 
 
 }

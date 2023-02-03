@@ -17,11 +17,10 @@ footer {
 	span {
 		font-size: 16px;
 		font-weight: 400;
-		font-style: light;
 		padding-top: 9px;
 		
 		@media screen and (min-width: 1024px) {
-			padding-right: 30px;
+			padding-right: 50px;
 			padding-top: 0px;
 		}
 		
@@ -29,7 +28,7 @@ footer {
 	a {
 		text-decoration: none;
 		color: $white;
-		
+		padding-top: 4px;
 	}
 
 	@media screen and (min-width: 1024px) {
@@ -59,7 +58,7 @@ footer {
 	display: flex;
 	flex-direction: row;
 	align-items:baseline;
-	padding-top: 10px;
+	padding-top: 5px;
 	@media screen and (min-width: 1024px) {
 		padding-right: 30px;
 		
@@ -68,7 +67,6 @@ footer {
 	span {
 		font-size: 16px;
 		font-weight: 500;
-		font-style: medium;
 	}
 }
 .ustensils {
