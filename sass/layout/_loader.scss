@@ -2,16 +2,15 @@
 
 #loader {
   font-family: 'Shrikhand', cursive;
-  font-size: 65px;
+  font-size: 50px;
   overflow: hidden;
   white-space: nowrap;
   animation: loading 3s forwards;
-  background-color: white ;
-  opacity: 0.9;
+  background-color: white;
   display: grid;
-    place-items: center;
-    margin: auto;
-    inset : 0 ;
-    position: fixed;
-    
-  }
+  place-items: center;
+  margin: auto;
+  inset: 0;
+  position: fixed;
+  z-index: 6;
+}

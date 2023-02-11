@@ -14,47 +14,32 @@
         -webkit-transform: scale(0);
     }
 }
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
+
 @keyframes appear {
     from {
         opacity: 0;
-        margin-top: -50px;
+        margin-top: 0;
       }
       to {
         opacity: 1;
-        margin-top: 0;
+        margin-top: -20px;
       }
     }
 
 @-webkit-keyframes appear {
     from {
         opacity: 0;
-        margin-top: -50px;
+        margin-top: 0;
       }
       to {
         opacity: 1;
-        margin-top: 0;
+        margin-top: -20px;
       }
     
 }
 @keyframes loading {
     from {
-      width: 100%;
+      width:  100%;
     }
     to {
       width: 0;
@@ -62,7 +47,7 @@
   }
   @keyframes fill {
     0% {
-        width: 0;
+        width: 0px;
     }
     100% {
         width: 51px;

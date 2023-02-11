@@ -1,0 +1,111 @@
+@use "../Utils/variables" as *;
+
+
+
+.card {
+	display: flex;
+	flex-direction: column;
+	background: $white;
+	border-radius: 20px;
+	height: 200px;
+	margin: 4%;
+	box-shadow: 5px 5px 5px 1px #aba9a9;
+	text-decoration: none;
+	color: black;
+
+	img {
+		height: 130px;
+		border-radius: 20px 20px 0px 0px;
+		width: 100%;
+		-o-object-fit: cover;
+		object-fit: cover;
+	}
+
+	h3 {
+		margin: 0px;
+		padding-left: 10px;
+		padding-top: 10px;
+		font-size: 18px;
+		font-weight: 700;
+		text-align: left;
+	}
+
+	span {
+		padding-left: 10px;
+		padding-top: 5px;
+		font-size: 17px;
+		font-weight: 300;
+		line-height: 20px;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+
+	@media screen and (min-width: 1024px) {
+		width: 24%;
+		margin: 1%;
+	}
+}
+
+.image {
+	position: relative;
+}
+
+.new {
+	color: #008766;
+	background: $greenlight;
+	margin: 0px;
+	padding: 3px;
+	width: 73px;
+	height: 21px;
+	position: absolute;
+	left: 69%;
+	bottom: 70%;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	font-style: normal;
+	border-radius: 2px;
+
+}
+
+.heart {
+	font-size: 23px;
+	display: grid;
+	padding-right: 9px;
+	font-weight: 300
+}
+
+.full {
+	position: absolute;
+	z-index: 2;
+	opacity: 0;
+	transition-property: all;
+	transition-duration: 0.5s;
+
+	&:hover {
+		opacity: 1;
+		background-image: linear-gradient($purple -5.2%, $pink 110.74%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+	}
+}
+
+.empty {
+	position: relative;
+	z-index: 1;
+}
+
+.textcard {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.textlocation {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+}
