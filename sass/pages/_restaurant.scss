@@ -1,4 +1,4 @@
-@use "../components/breakpoint" as *;
+
 
 .picture {
 	width: 100%;
@@ -20,7 +20,7 @@
 	position: relative;
 
 	@media screen and (min-width: 1024px) {
-		
+
 		margin: auto;
 		width: 70%;
 	}
