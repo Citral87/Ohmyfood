@@ -469,9 +469,11 @@ footer a {
 }
 @keyframes loading {
   from {
+    opacity: 1;
     width: 100%;
   }
   to {
+    opacity: 0;
     width: 0;
   }
 }
